@@ -78,3 +78,14 @@ if (!function_exists('pdoDefaultConnect')) {
         );
     }
 }
+
+if (!function_exists('recursionPlus')) {
+    // 递归加法
+    function recursionPlus($num) {
+        if ($num == 1) {
+            return 1;
+        } else {
+            return recursionPlus($num - 1) + $num;
+        }
+    }
+}
